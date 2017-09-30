@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="ap_hi_2 <= 0.5\nentropy = 1.0\nsamples = 70000\nvalue = [35021, 34979]", fillcolor="#e5813900"] ;
+1 [label="ap_hi_3 <= 0.5\nentropy = 0.9786\nsamples = 55564\nvalue = [32557, 23007]", fillcolor="#e581394b"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="cholesterol_3 <= 0.5\nentropy = 0.9582\nsamples = 51663\nvalue = [32023, 19640]", fillcolor="#e5813963"] ;
+1 -> 2 ;
+3 [label="entropy = 0.9311\nsamples = 46977\nvalue = [30688, 16289]", fillcolor="#e5813978"] ;
+2 -> 3 ;
+4 [label="entropy = 0.862\nsamples = 4686\nvalue = [1335, 3351]", fillcolor="#399de599"] ;
+2 -> 4 ;
+5 [label="agey <= 60.5\nentropy = 0.576\nsamples = 3901\nvalue = [534, 3367]", fillcolor="#399de5d7"] ;
+1 -> 5 ;
+6 [label="entropy = 0.5645\nsamples = 3062\nvalue = [406, 2656]", fillcolor="#399de5d8"] ;
+5 -> 6 ;
+7 [label="entropy = 0.6162\nsamples = 839\nvalue = [128, 711]", fillcolor="#399de5d1"] ;
+5 -> 7 ;
+8 [label="age_3 <= 0.5\nentropy = 0.6593\nsamples = 14436\nvalue = [2464, 11972]", fillcolor="#399de5cb"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="age_2 <= 0.5\nentropy = 0.6444\nsamples = 10430\nvalue = [1713, 8717]", fillcolor="#399de5cd"] ;
+8 -> 9 ;
+10 [label="entropy = 0.6298\nsamples = 6944\nvalue = [1098, 5846]", fillcolor="#399de5cf"] ;
+9 -> 10 ;
+11 [label="entropy = 0.6722\nsamples = 3486\nvalue = [615, 2871]", fillcolor="#399de5c8"] ;
+9 -> 11 ;
+12 [label="cholesterol_1 <= 0.5\nentropy = 0.6961\nsamples = 4006\nvalue = [751, 3255]", fillcolor="#399de5c4"] ;
+8 -> 12 ;
+13 [label="entropy = 0.6508\nsamples = 1587\nvalue = [265, 1322]", fillcolor="#399de5cc"] ;
+12 -> 13 ;
+14 [label="entropy = 0.7237\nsamples = 2419\nvalue = [486, 1933]", fillcolor="#399de5bf"] ;
+12 -> 14 ;
+}
